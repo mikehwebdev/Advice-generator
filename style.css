@@ -49,7 +49,7 @@ body {
   text-transform: uppercase;
   color: var(--neon-green);
   text-align: center;
-  font-size: clamp(0.6875rem, 2.5vw, 0.8125rem);
+  font-size: 0.6875rem;
   letter-spacing: 0.21606rem;
 }
 
@@ -93,8 +93,19 @@ body {
 }
 
 @media (min-width: 540px) {
+
+  .title {
+    font-size: 0.8125rem;
+    letter-spacing: 0.25538rem;
+  }
+
+  .main-text {
+    letter-spacing: -0.01875rem;
+  }
+  
   .card {
-    grid-template-rows: 3rem 2.62rem auto 2.5rem 1rem 2.5rem 2rem ;
+    border-radius: 0.9375rem;
+    grid-template-rows: 3rem 2.62rem auto 2.5rem 1rem 2.5rem 2rem;
   }
 
   .green-icon {
