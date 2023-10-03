@@ -2,7 +2,7 @@ const mainText = document.querySelector('.main-text')
 const titleText = document.querySelector('.title')
 const button = document.querySelector('.green-icon')
 
-fetchData()
+
 
 button.addEventListener('click', fetchData)
 
