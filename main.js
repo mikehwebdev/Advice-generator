@@ -1,6 +1,13 @@
 const mainText = document.querySelector('.main-text')
 const titleText = document.querySelector('.title')
+const button = document.querySelector('.green-icon')
 
+fetchData()
+
+button.addEventListener('click', fetchData)
+
+function fetchData() {
+  
 fetch('https://api.adviceslip.com/advice')
     .then(res => {
         if (res.status >= 200 && res.status <= 299) {
@@ -16,3 +23,4 @@ fetch('https://api.adviceslip.com/advice')
         titleText.innerHTML = `${error}`
         mainText.innerHTML = `Something went wrong. <br> Please try again.`
     })
+  }
